@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/widget32"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <!-- icon on the left -->
+	<ImageView
+		android:id="@+id/icon"
+		android:layout_width="20dp"
+		android:layout_height="20dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:src="@drawable/ic_launcher" />
+	
+	<!-- text fields: longitude, latitude and date on the bottom -->
+	<LinearLayout
+		android:id="@+id/widget35"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/lonlat"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="lon and lat comes here..."
+			android:textSize="16dp" />
+		<TextView
+			android:id="@+id/geotag"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Geotag comes here..."
+			android:textSize="12dp" />
+	</LinearLayout>
+</LinearLayout>
