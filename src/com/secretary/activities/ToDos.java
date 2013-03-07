@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.ListActivity;
 import android.view.Menu;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 public class ToDos extends ListActivity {
 
@@ -38,6 +39,12 @@ public class ToDos extends ListActivity {
 		
 	}//initializeUI
 	
-	private void updateList(){}//updateList
+	private void updateList(){
+		String [] from = testRows;
+		int [] to = {R.id.lonlat}; 
+		
+		//SimpleAdapter simpleAdapter = new SimpleAdapter(this, data, resource, from, to);
+		
+	}//updateList
 
 }
