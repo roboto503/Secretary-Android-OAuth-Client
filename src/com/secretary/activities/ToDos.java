@@ -12,7 +12,7 @@ import android.view.Menu;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
-public class ToDos extends ListActivity {
+public class ToDos extends Activity {
 
 	//UI items
 	private ListView listView;
@@ -42,6 +42,7 @@ public class ToDos extends ListActivity {
 	private void initializeUI(){
 	
 		listView = (ListView) findViewById(R.id.list);
+		updateList();
 		
 	}//initializeUI
 	
@@ -68,7 +69,7 @@ public class ToDos extends ListActivity {
 		ArrayList<Map<String, String>> valuesList = new ArrayList<Map<String, String>>();
 		
 		// loops through given list of locations, and strips location's values (longitude, latitude and date) to the right places in row item using putData method 
-		for(int i = 0; i <= valuesTasks.length; i++){
+		for(int i = 0; i < valuesTasks.length; i++){
 			valuesList.add(putData(valuesTasks[i], valuesDates[i]));
 		}//for
 
