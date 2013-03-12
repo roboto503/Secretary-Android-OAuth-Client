@@ -28,9 +28,6 @@ import java.util.Random;
 
 public class OAuth {
 
-
-
-
 	private StringBuilder baseUrl = new StringBuilder();
 	private String baseString = "";
 	private String signature ="";
@@ -64,6 +61,7 @@ public class OAuth {
 		return null;
 
 	}
+
 	/**
 	 * Get nonce
 	 * @return
@@ -76,8 +74,8 @@ public class OAuth {
 
 		return nonce.toString();
 	}
+
 	/**
-	 *
 	 * @return current timestamp as seconds since january 01 1970
 	 */
 	private long getTimeStamp(){
